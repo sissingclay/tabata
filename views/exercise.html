@@ -1,0 +1,36 @@
+<div class="navigation-bar">
+    <div class="navigation-bar__left">
+        <a href="/"></a> <span class="icon-button--quiet navigation-bar__line-height">You </span></a>
+    </div>
+    <div class="navigation-bar__center">
+        <span class="navigation-bar__title navigation-bar__line-height">Exercise </span>
+    </div>
+    <div class="navigation-bar__right">
+        <span class="icon-button--quiet navigation-bar__line-height font-weight-500">Timings </span>
+    </div>
+</div>
+
+<br>
+
+<div class="width-80-wrapper">
+    <button class="button--cta" data-ng-click="addExercise()">Add Exercise</button>
+</div>
+
+<br>
+
+<div class="width-80-wrapper">
+    <form name="exercise" data-ng-submit="exerciseForm(exercise)" novalidate>
+
+        <section data-ng-repeat="exercise in exercises.exercises">
+            <input type="text" data-ng-model="exercise.name" class="text-input--underbar smaller float-left" placeholder="Add Exercise" value="exercise.name" required>
+            <button class="button button--light float-right" data-ng-click="removeExercise($index)">Remove</button>
+        </section>
+
+        <p data-ng-hide="isExercise">Please add exercises. It is recommended to add at least 4 different exercises.</p>
+
+        <br class="clear-both">
+        <br>
+        <br>
+        <button class="button login-button" data-ng-show="isExercise">Next</button>
+    </form>
+</div>

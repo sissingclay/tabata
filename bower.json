@@ -7,7 +7,10 @@
         "**/*.txt"
     ],
     "dependencies": {
-        "angularjs": "1.2.*"
+        "angularjs": "1.2.x",
+        "angular-route": "~1.2.x",
+        "angular-cookies": "1.2.17",
+        "angular-resource": "~1.2.x"
     },
     "devDependencies": {
     }

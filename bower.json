@@ -1,0 +1,14 @@
+{
+    "name": "tabata",
+    "version": "1.0.0",
+    "main": "css/index.css",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+        "angularjs": "1.2.*"
+    },
+    "devDependencies": {
+    }
+}
